@@ -8,24 +8,25 @@ class FakeAuthService implements AuthService {
   bool logoutCalled = false;
 
   @override
+  @override
   Future<Map<String, dynamic>> login(String username, String password) async {
     if (shouldFailLogin) {
       throw Exception('Invalid username or password.');
     }
-
-    // Simulasi response login sukses dengan data lengkap User
     return {
       'id': 1,
-      'username': "emilys",
-      'email': "emily.johnson@x.dummyjson.com",
-      'firstName': "Emily",
-      'lastName': "Johnson",
-      'gender': "female",
-      'image': "https://dummyjson.com/icon/emilys/128",
-      'token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-      'refreshToken': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      'username': username,
+      'password': password,
+      'email': 'user@example.com',
+      'firstName': 'John',
+      'lastName': 'Doe',
+      'gender': 'male',
+      'image': 'https://example.com/avatar.png',
+      'token': 'fake_token',
+      'refreshToken': 'fake_refresh_token',
     };
   }
+
 
   @override
   Future<void> logout() async {

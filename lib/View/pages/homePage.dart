@@ -8,8 +8,18 @@ class HomeScreen extends StatelessWidget {
     final user = context.watch<AuthViewModel>().user;
     return Scaffold(
       appBar: AppBar(title: Text('Home Screen')),
-      body: Center(
-        child: Text('Welcome, ${user?.username ?? 'User'}!'),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Center(
+          child: Column(
+            children: [
+              const Gap(20),
+              Text('Welcome, ${user?.username ?? 'User'}!'),
+              const Gap(20),
+              CustomButton(text: "Logout", onPressed: (){Navigator.pushReplacementNamed(context, '/');})
+            ],
+          ),
+        ),
       ),
     );
   }
