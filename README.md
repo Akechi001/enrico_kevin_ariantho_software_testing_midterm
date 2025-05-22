@@ -1,16 +1,22 @@
 # enrico_kevin_ariantho_software_testing_midterm
 
-A new Flutter project.
+## Overview
+A Flutter application implementing user authentication using MVVM architecture. Users can log in using DummyJSON API.
 
-## Getting Started
+## Architecture
+- **Model:** Defines user data.
+- **ViewModel:** Handles input validation, login/logout logic.
+- **View:** Flutter UI (minimal, for login/logout).
+- **Tests:** Unit tests for ViewModel covering edge cases and input validation.
 
-This project is a starting point for a Flutter application.
+## Test Cases
+- TC_AUTH_VM_001 to TC_AUTH_VM_010 (see `test/auth_view_model_test.dart` for details).
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+1. Clone repo
+2. Run `flutter pub get`
+3. Run tests using:
+   
+```bash
+flutter test test/auth_view_model_test.dart
+```
