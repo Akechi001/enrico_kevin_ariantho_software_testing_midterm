@@ -22,8 +22,8 @@ flutter test test/auth_view_model_test.dart
 ```
 
 ## Overview Application
-![WhatsApp Image 2025-05-22 at 11 39 01_af7ca60d](https://github.com/user-attachments/assets/7b556f54-0a10-4d9a-b5db-65e3f1a9bad0)
-![WhatsApp Image 2025-05-22 at 11 39 01_10ca87c0](https://github.com/user-attachments/assets/358a3ab7-0167-4681-84a5-e36dc981743e)
+<img src="https://github.com/user-attachments/assets/7b556f54-0a10-4d9a-b5db-65e3f1a9bad0" width="300"/>
+<img src="https://github.com/user-attachments/assets/358a3ab7-0167-4681-84a5-e36dc981743e" width="300"/>
 
 ## Complete Test Case
 ![Screenshot 2025-05-22 113620](https://github.com/user-attachments/assets/79c30fc1-d20f-4991-9cdf-b904c5981952)
