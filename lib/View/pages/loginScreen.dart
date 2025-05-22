@@ -126,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       final success = await authViewModel.login(email, password);
       if (success != null) {
-        Navigator.pushReplacementNamed(context, '/home'); // atau rute lain
+        Navigator.pushReplacementNamed(context, '/home');
       } else {
         final error = authViewModel.error ?? 'Login gagal';
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error)));

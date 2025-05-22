@@ -123,8 +123,6 @@ class _FormFieldWidgetState extends State<FormFieldWidget> {
                   if (pickedDate != null) {
                     widget.controller.text =
                     "${pickedDate.day.toString().padLeft(2, '0')}-${pickedDate.month.toString().padLeft(2, '0')}-${pickedDate.year}";
-
-                    // callback ke parent jika dibutuhkan
                     widget.onDateSelected?.call(pickedDate);
                   }
                 },
